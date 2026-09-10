@@ -1,0 +1,32 @@
+{
+  "1": {
+    "class_type": "LoadEXRPlate",
+    "inputs": {
+      "path": "",
+      "first_frame": 1,
+      "last_frame": 0,
+      "fps": 25.0,
+      "custom_width": 0,
+      "custom_height": 0,
+      "frame_load_cap": 0,
+      "skip_first_frames": 0,
+      "select_every_nth": 1,
+      "colorspace": "keep linear (no conversion)",
+      "exposure": 0.0,
+      "clamp_output": false
+    }
+  },
+  "2": {
+    "class_type": "SaveEXRPlate",
+    "inputs": {
+      "images": ["1", 0],
+      "alpha": ["1", 1],
+      "path": "",
+      "first_frame": 1,
+      "custom_width": 0,
+      "custom_height": 0,
+      "colorspace": "keep linear (no conversion)",
+      "bit_depth": "half (16-bit)"
+    }
+  }
+}

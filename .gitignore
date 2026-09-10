@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# never commit plates or renders
+*.exr
+*.mov
+*.mp4
+*.tif
+*.tiff
