@@ -1,2 +1,4 @@
 opencv-python>=4.6
 numpy
+openexr
+imath
