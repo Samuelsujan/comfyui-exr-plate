@@ -3,7 +3,7 @@ name = "samuelsujan-exr-plate"
 description = "Linear EXR plate I/O for Nuke <-> ComfyUI — sequence loading with playback preview, invertible sRGB/Rec.709/Reinhard colorspace transforms, multi-format save, a browse-and-version path builder, and a Nuke bridge."
 version = "1.1.0"
 license = { text = "MIT" }
-dependencies = ["opencv-python>=4.6", "numpy"]
+dependencies = ["opencv-python>=4.6", "numpy", "openexr", "imath"]
 
 [project.urls]
 Repository = "https://github.com/Samuelsujan/comfyui-exr-plate"
