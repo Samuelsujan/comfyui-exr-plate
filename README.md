@@ -177,6 +177,21 @@ lossless linear pipeline.
   (default `http://127.0.0.1:8188`).
 - **Preview looks dark** — that's your plate in true linear; switch the
   colorspace widget to **linear → sRGB** to view it display-referred.
+- **"Failed to read ...: cv2 returned None ... OpenEXR fallback is
+  unavailable or also failed"** — two things to check: (1) OpenCV's EXR
+  codec is disabled by default on most builds; add `set
+  OPENCV_IO_ENABLE_OPENEXR=1` to your ComfyUI launch `.bat`, above the
+  line that runs `main.py`. (2) `openexr`/`imath` should install
+  automatically from `requirements.txt` now, but if you installed before
+  that change, run `python_embeded\python.exe -m pip install openexr
+  imath` manually, then **fully close and relaunch ComfyUI** (a browser
+  refresh alone won't pick up the new install).
+
+
+
+
+
+  
 
 ## License
 
