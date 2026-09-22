@@ -90,7 +90,11 @@ what Save writes.
 ### 1. ComfyUI nodes
 
 Copy the `comfyui-exr-plate` folder into your ComfyUI custom nodes
-directory:
+directory. **If you used GitHub's "Download ZIP" button**, the extracted
+folder will be named `comfyui-exr-plate-main` — rename it to
+`comfyui-exr-plate` (drop the `-main` suffix) before moving it into
+`custom_nodes/`, or later commands referencing the folder by name will
+fail with a "No such file or directory" error:
 
 ```
 ComfyUI/custom_nodes/comfyui-exr-plate/
